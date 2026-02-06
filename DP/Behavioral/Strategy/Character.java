@@ -1,8 +1,17 @@
 public abstract class Character {
-    DancingSkill dancingSkill;
+    private DancingSkill dancingSkill;
+    private
     FightingSkill fightingSkill;
 
     public Character() {}
+
+    public void setDancingSkill(DancingSkill dancingSkill) {
+        this.dancingSkill = dancingSkill;
+    }
+
+    public void setFightingSkill(FightingSkill fightingSkill) {
+        this.fightingSkill = fightingSkill;
+    }
 
     public void performFight() {
         fightingSkill.fight();

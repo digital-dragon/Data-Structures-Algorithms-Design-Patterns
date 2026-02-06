@@ -1,6 +1,6 @@
 public class Cowboy extends Character{
     public Cowboy () {
-        dancingSkill = new CantDanceALick();
-        fightingSkill = new GunSlinger();
+        setDancingSkill(new CantDanceALick());
+        setFightingSkill(new GunSlinger());
     }
 }
