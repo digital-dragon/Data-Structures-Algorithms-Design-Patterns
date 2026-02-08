@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class DemoClass {
 
     int number;
@@ -10,9 +12,22 @@ public class DemoClass {
 
     @Override
     public String toString() {
-        return "DemoClass{" +
+        return "{" +
                 "number=" + number +
                 ", square=" + square +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DemoClass demoClass = (DemoClass) o;
+        return number == demoClass.number && square == demoClass.square;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(number, square);
     }
 }
