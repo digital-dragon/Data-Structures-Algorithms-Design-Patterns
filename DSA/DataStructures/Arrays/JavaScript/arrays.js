@@ -9,3 +9,6 @@ for(let i = 0; i < 10; i++) {
 console.log(arr1);
 arr1.shift();
 console.log(arr1);
+
+console.log(this);
+console.log(this);
